@@ -1,14 +1,13 @@
 This project explores,cleans, and analyses usa retail sales data for a company call ()
 using SQL Server and SSMS, then visualises the results in an interactive Tableau dashboard. It follows a structured exploratory data analysis(EDA) and Advanced Analysis framework to turn raw, inconsistently retional data into bussiness-ready insights on sales performance, customer value,and regional trends. 
 
-
-##Raw Material 
+## Raw Material 
 - Orders
 - Products
 - Customers
 - Locations
 
-##Objetives 
+## Objetives 
 - Inspect database structures and metadata.
 - Identify and correct data type issues in raw sources columns
 - Explore categorical dimensions and numerical measures
@@ -17,12 +16,12 @@ using SQL Server and SSMS, then visualises the results in an interactive Tableau
 - Reveal trends, patterns, and top/bottom performers
 - segment customerrs by value and activity
 
-##Technologies 
+## Technologies 
 - SQL Server
 - SQL Server Management Studies (SSMS) 
 - Tableau
 
-  ##Data Quality & Cleaning
+## Data Quality & Cleaning
 
   Several sauce columns were stored into an incorrect data type which distorted early results(e.g MIN(orderdate) returning a later date then MAX(OrderDate) due to orderdate being stored as nvarchar).
 
