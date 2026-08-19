@@ -32,8 +32,58 @@ using SQL Server and SSMS, then visualises the results in an interactive Tableau
   - Re-ran data-range checks against the corrected columns to confirm accurate first/last order and ship dates and total years of coverage
 
   - All downstream queries reference the corrected _New columns rather then the raw source columns.
+
 ## Project Structure 
 
-SQL
+SQL/ 
+- Datebase Exploration.sql
+- Dimension Exploration.sql
+- Date Exploration.sql
+- Measures Exploration.sql
+- Magnitude Analysis.sql
+- Ranking Analysis.sql
+- Change Over Time Analysis.sql
+- Cumulative Analysis.sql
+- Performance Analysis.sql
+- Part-to-whole Analysis.sql
+- Segmentation Analysis.sql
+- README.md
+  Dashboard/
+- USA_Sales_Dashboard.twbx
+  
 
-- Date 
+## Exploratory Data Analysis Framework 
+
+1. Database Exploration - Map tables,columns, and data types via INFORMATION_SCHEMA.
+   Locates correct sources for reporting and reduces errors.
+
+2. Dimension Exploration - Explore categorical fields: City, States, Region, Segment,     Category , Sub-Category. Identifies reporting categoreies and businesss scope.
+
+3. Date Exploration - Diagnose and fix OrderDate?ShipDate type issues; establish          accurate dataset time span for trend analysis.
+
+4. Measures Exploration - Summarize cores numerical metrics: total sales, total quantity, average sale account, total orders/products/customers.
+
+5. Magnitude Analysis - Compare performance across dimensions: revenue by states,
+   item count by category, average sales by sub-category, revenue by customer.
+
+6. Ranking Analysis - Identity top and bottom 10 performers by products, state, and       customers revenue.
+
+## Advanced Analysis 
+
+7. Change Over Time - Monthly sales, customer count, and quantity trends over the full    order history.
+
+8. Cumulative Analysis - Running total of monthly sales and moving average sale price     to track growth momentum.
+
+9. Performance Analysis - Year-over-year product performance;eash product's sales vs      its yearly average, and vs, its prior-yearly sales, flagged as Above/Below/Average     and Increased and Decreased
+
+10. Part-to-Whole Analysis - percentage revenue contribution of each product category
+    to total sales.
+
+11. Data Segmentation - Customers segmented into  VIP, Regular, and New tiers based        on total spend and months active, then counted per segment
+
+
+
+
+   
+
+
