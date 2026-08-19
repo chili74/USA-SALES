@@ -81,6 +81,17 @@ SQL/
 
 11. Data Segmentation - Customers segmented into  VIP, Regular, and New tiers based        on total spend and months active, then counted per segment
 
+## Key Business Insights 
+
+- Corrected data type were essential before any date -or sales-based analysis could be trusted.
+- Sales performance varies by state and product category, with a small st of customer and products driving a disproportionate share of        revenue.
+- Year-over-year performance analysis surfaces which products are gaining and losing momentum, not just which are largest.
+- Customer segmentation identifies a VIP tier worth prioritising for retention efforts.
+
+
+## Lessons Learned 
+
+This project reinforce the importance of validating column data types before analysis - the initial nvarchar -type date produced the incorrect result until diagnosed and corrected. It also demonstrates how sql and a Tableau project complement each other: SQL for precise, auditable, calculations, and Tableau for accessible, interactive exploration of the same.
 
 
 
